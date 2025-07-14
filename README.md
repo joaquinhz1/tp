@@ -1,42 +1,46 @@
-# Blog en Django
+# Proyecto Blog Django
 
-Este es un proyecto simple de blog en Django para la consigna:
+Este proyecto es un blog simple en Django que incluye:
 
-## Funcionalidades:
+- Herencia de plantillas
+- 3 modelos con sus formularios
+- Búsqueda por título de Post
+- Uso de Bootstrap
+- Subido a GitHub
 
-- Herencia de plantillas (base.html, etc.)
-- Modelos: Autor, Categoría, Entrada
-- Formularios para insertar datos en cada modelo
-- Formulario de búsqueda por título de entrada
+## Cómo probar
 
-## Cómo usar:
-
-1. Crear entorno virtual:
-
-```bash
+1. Clonar el repositorio y navegar al proyecto
+2. Crear entorno virtual:
 python -m venv env
-source env/bin/activate  # en Linux/macOS
-env\Scripts\activate   # en Windows
-```
+source env/Scripts/activate (Windows)
+source env/bin/activate (Linux/Mac)
 
-2. Instalar dependencias:
-
-```bash
+markdown
+Copiar
+Editar
+3. Instalar dependencias:
 pip install -r requirements.txt
-```
 
-3. Ejecutar migraciones:
-
-```bash
+markdown
+Copiar
+Editar
+4. Ejecutar migraciones:
 python manage.py makemigrations
 python manage.py migrate
-```
 
-4. Levantar el servidor:
-
-```bash
+markdown
+Copiar
+Editar
+5. Correr el servidor:
 python manage.py runserver
-```
 
-5. Acceder desde: http://127.0.0.1:8000/
+markdown
+Copiar
+Editar
+6. Entrar a http://127.0.0.1:8000
 
+## Funcionalidades
+
+- Crear autores, categorías y posts desde `/nuevo_autor/`, `/nueva_categoria/`, `/nuevo_post/`
+- Buscar posts desde `/buscar_post/`
