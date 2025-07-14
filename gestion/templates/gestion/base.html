@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+<header><h1>Mi Biblioteca</h1></header>
+<nav>
+    <a href="{% url 'listar_libros' %}">Inicio</a> |
+    <a href="{% url 'crear_autor' %}">Nuevo Autor</a> |
+    <a href="{% url 'crear_categoria' %}">Nueva Categoría</a> |
+    <a href="{% url 'crear_libro' %}">Nuevo Libro</a> |
+    <a href="{% url 'buscar_libro' %}">Buscar Libro</a>
+</nav>
+<main>{% block content %}{% endblock %}</main>
+</body>
+</html>
